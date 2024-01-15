@@ -74,7 +74,9 @@ section {
 .home {
     display: flex;
     align-items: center;
-    margin: 9%;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
 }
 
 .home-content {
@@ -131,21 +133,25 @@ section {
     font-weight: 600;
     letter-spacing: .1rem;
     color: var(--background-color);
-z-index: 1;
-transition: .5s;
+    z-index: 1;
+    transition: .5s;
 
 }
+
 .btn-box.btn::nth-child(2) {
     background: transparent;
     color: var(--main-color);
 
 }
-.btn-box.btn::nth-child(2):hover{
+
+.btn-box.btn::nth-child(2):hover {
     color: var(--background-color);
 }
+
 .btn-box.btn::nth-child(2)::before {
     background: var(--main-color);
 }
+
 .btn-box.btn::before {
     content: '';
     position: absolute;
@@ -154,21 +160,22 @@ transition: .5s;
     width: 0;
     height: 100%;
     background-color: rgb(202, 34, 34);
-z-index: -1;
-transition: .5s;
+    z-index: -1;
+    transition: .5s;
 
 }
-.btn-box.btn:: hover::before{
 
-}
-.home-sci{
+.btn-box.btn:: hover::before {}
+
+.home-sci {
     position: absolute;
     bottom: 4rem;
     width: 170px;
     display: flex;
     justify-content: space-between;
 }
-.home-sci a{
+
+.home-sci a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -177,5 +184,74 @@ transition: .5s;
     background-color: transparent;
     border: .2rem solid var(var(--main-color));
     border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.home-sci a:hover {
+    color: var(--background-color);
+}
+
+.home-sci a::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+
+}
+.home-imagehover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
     
+    transition: 3s;
+}
+.homw-imghover{
+    background: var(--background-color);
+    opacity:  .8;
+
+}
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-background-color);
+    padding-bottom: 6rem;
+
+}
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+}
+.about-img{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-img{
+    width
 }
