@@ -11,8 +11,8 @@
 }
 
 :root {
-    --background-color: #081b29;
-    --second-background-color: #112e42;
+    --background-color:black #081b29;
+    --second-background-color:blue #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
 }
@@ -38,8 +38,13 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+transform: .3s;
 }
 
+.header.sticky {
+    background-color: yellowgreen;
+
+}
 .logo {
     font-size: 2.5rem;
     color: var(--text-color);
@@ -88,6 +93,10 @@ section {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
+
+}
+.home-content h1 span{
+    color: var(--text-color);
 
 }
 
@@ -422,7 +431,8 @@ section {
     padding-top: .5rem;
 
 }
-.education-box.education-content::before{
+
+.education-box.education-content::before {
     content: '';
     position: absolute;
     left: -1.1rem;
@@ -434,11 +444,12 @@ section {
     background-color: red;
     overflow: hidden;
     z-index: -1;
-     
+
 
 }
+
 body {
-     background-color: white;
+    background-color: white;
     color: red;
     font-family: Arial, sans-serif;
 }
@@ -447,8 +458,8 @@ h2 {
     color: red;
 }
 
-.education-box, */
-.experience-box {
+.education-box,
+*/ .experience-box {
     background-color: white;
     color: red;
     padding: 20px;
@@ -458,22 +469,25 @@ h2 {
 }
 
 
- 
 
- body {
+
+body {
     background-color: white;
     color: red;
     font-family: Arial, sans-serif;
 }
 
 h2 {
-    color: #3498db; /* Blue color for heading */
+    color: #3498db;
+    /* Blue color for heading */
 }
 
 .education-box,
 .experience-box {
-    background-color: #3498db; /* Blue color */
-    color:red white; /* Text color for both sections */
+    background-color: #3498db;
+    /* Blue color */
+    color: red white;
+    /* Text color for both sections */
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -481,7 +495,8 @@ h2 {
 }
 
 .title {
-    color: #3498db; /* Blue color */
+    color: #3498db;
+    /* Blue color */
 }
 
 .year {
@@ -491,3 +506,354 @@ h2 {
 
 /* Add any additional styling as needed */
 
+/* .skills{
+    min-height: auto;
+     padding: var(--second-background-color);
+     padding-bottom: 7rem;
+
+}
+.skills .skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+}
+ .skills-row .skills-column{
+    flex: 1 1 40rem;
+
+ }
+ .skills-column .title{
+    font-size: 2.5rem;
+    margin: 0 0  1.5rem;
+ } */
+
+
+
+
+ .skills {
+    min-height: auto;
+    padding: var(--second-background-color);
+    padding-bottom: 7rem;
+}
+
+.skills .skills-row {
+    display: flex;
+    gap: 5rem;
+}
+
+.skills .skills-column {
+    flex: 1 1 40rem;
+}
+
+.skills-column .category-title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.skills-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-column ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem; /* Adjust the font size for the list items if needed */
+}
+
+
+
+
+
+
+
+
+
+
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-column {
+    flex-basis: 48%; /* Adjust the width as needed */
+}
+
+.skills {
+    text-align: center;
+}
+
+.title {
+    color: #333;
+}
+
+.progress {
+    margin-bottom: 15px;
+}
+
+.bar {
+    background-color: #4CAF50; /* Green color for the progress bar */
+    height: 20px;
+    margin-top: 5px;
+}
+
+span {
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.skills-box {
+    background-color: #f2f2f2; /* Light grey background color */
+    padding: 20px;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-column {
+    flex-basis: 48%; /* Adjust the width as needed */
+}
+
+.skills {
+    text-align: center;
+}
+
+.title {
+    color: #333;
+}
+
+.progress {
+    margin-bottom: 15px;
+}
+
+.bar {
+    background-color: #4CAF50; /* Green color for the progress bar */
+    height: 20px;
+    margin-top: 5px;
+}
+
+span {
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.heading {
+    background-color: #ff0000; /* Red background color for the heading */
+    color: #fff; /* White text color */
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+ .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+   width: 90%; 
+ }
+ .skills-box .skills-content::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+ }
+
+
+
+
+ .contact {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.heading {
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    background: transparent;
+}
+
+.focus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #3498db;
+    transform-origin: top right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 2px solid #3498db;
+}
+
+input:focus + .focus::before, textarea:focus + .focus::before {
+    transform-origin: top left;
+    transform: scaleX(1);
+}
+
+.btn-box {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+
+}
+
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Align at the right-hand side */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.contact {
+    text-align: center;
+}
+
+.heading {
+    font-size: 2em;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+    background-color: #fff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-box {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background: var(--second-background-color);
+
+}
+.footer-text p{
+    font-size: 1.6rem;
+
+}
+.footer-icontop a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color); 
+    border: .2rem solid var(--main-color);
+    border: radius .6rem; 
+    transition: -5s;
+}
+
+.footer-icontop{
+    font-size: 2.4rem;
+    color: red\;
+    color: var(--background-color);
+    transition: .5s;
+
+}
+.footer-icontop a:hover::before{
+    width: 100%;
+
+}
+.footer-icontop a:hover i {
+    color: var(--main-color);
+}
+
+/* breakpoint */
+@media(max-width: 1200px)  {
+    html{
+        font-size: 55%;
+
+    }
+}
+@media(max-width: 991px)  {
+    .header{
+        padding: 2rem 4%;
+
+    }
+
+}

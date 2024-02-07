@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: red#f9f9f9; /* Set your preferred background color */
+    
+}
+
+.valentine-day-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: .3s;
+
+}
+
+
+input#open {
+    /* background-color: #ff5252; /* Set your preferred open button color */
+    /* width: 50px;
+    height: 5px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer; */ */
+    display:  none;
+}
+
+.open:before, .open:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #ff5252;
+    transition: transform 0.3s ease;
+}
+/* 
+.open:before {
+    top: -15px;
+}
+
+.open:after {
+    top: 15px;
+}
+
+#open:checked + .open {
+    background-color: transparent;
+}
+
+#open:checked + .open:before {
+    transform: rotate(-45deg) translate(0, -6px);
+}
+
+#open:checked + .open:after {
+    transform: rotate(45deg) translate(0, 6px); */
+}
+
+.card-font {
+    background-color: #ffffff; /* Set your preferred card background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0 green, blue, alpha) 30px 050px rgba(0,0,0.3, green, blue, alpha)
+    0;
+transition: 3s;
+
+
+
+}
+
+.note {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333; /* Set your preferred text color */
+}
+
+.card-inside {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#open:checked ~ .card-inside {
+    display: block;
+}
+
+.text-one {
+    font-size: 24px;
+    color: #ff5252; /* Set your preferred text color */
+    font-weight: bold;
+}
+
+.heart {
+    width: 50px;
+    height: 50px;
+    background-color: #ff5252; /* Set your preferred heart color */
+    clip-path: polygon(
+        50% 15%,
+        61% 15%,
+        67% 25%,
+        50% 40%,
+        33% 25%,
+        39% 15%
+    );
+    position: relative;
+    margin: 20px auto;
+}
+
+.smile, .eyes {
+    width: 50px;
+    height: 50px;
+    background-color: #ffd700; /* Set your preferred smile and eyes color */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.smile {
+    clip-path: ellipse(50% 50% at 50% 50%);
+    height: 30px;
+}
+
+.eyes {
+    width: 20px;
+    height: 20px;
+    top: 30%;
+    left: 30%;
+}
+
+.eyes::before, .eyes::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.eyes::before {
+    left: 30%;
+}
+
+.eyes::after {
+    left: 70%;
+}

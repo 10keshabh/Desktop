@@ -1,30 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>symmentic tags</title>
+    <title>Keshabh Bist - Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <div>
-        <header>
-            <nav>
-                <ul>
-                    <li>home</li>
-                    <li>about</li>
-                    <li>contact</li>
+    <header class="header">
+        <a href="#" class="logo">Mr. Bruce</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-                </ul>
-            </nav>
-        </header>
-        <main> <h1>what are symmentic tags </h1></main>
+    <!-- Home Section Design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Keshabh Bist <span></span></h1>
+            <div class="text-animation"></div>
+            <h3><b>Frontend Developer</b></h3>
+            <p>If you're embarking on your journey as a frontend developer, it's essential to grasp key concepts such as HTML, CSS, and JavaScript. Familiarize yourself with responsive design, version control using tools like Git, and popular frontend frameworks like React.js. Stay curious, practice regularly, and explore the vast world of frontend development to build a solid foundation for your career.</p>
+            <div class="btn-box">
+                <a href="#" class="btn">Hire Me</a>
+                <a href="#" class="btn">Let's Talk</a>
+            </div>
+            <div class="home-sci">
+                <!-- Add your social media icons here -->
+            </div>
+            <div class="home-imagehover"></div>
+        </div>
+    </section>
 
-    </div>  
-    <br>
-    <footer>
-        copy right all chw  sides reserved
-        <a href="https://www.google.com"> go to google</a>
+    <!-- About Section Design -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-img">
+            <img src="c:\Users\Dell\Downloads\download.jpg" alt="Profile Image">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Frontend Developer!</h3>
+            <p>"Passionate and dedicated web developer with a love for turning ideas into interactive and user-friendly websites... (Your about me content)"</p>
+            <div class="btn-box btns">
+                <a href="#" class="btns"><b>Read More</b></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section Design -->
+    <section class="education" id="education">
+        <h2 class="heading">My Journey<span></span></h2>
+        <!-- Add your education content here -->
+    </section>
+
+    <!-- Skills Section Design -->
+    <section class="skills" id="skills">
+        <h2 class="heading"><span>My Skills</span></h2>
+        <!-- Add your skills content here -->
+    </section>
+
+    <!-- Contact Section Design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <!-- Add your contact form here -->
+    </section>
+
+    <!-- Footer Design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Mr. Beast | ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#"><box-icon name='up-arrow-alt'></box-icon></a>
+        </div>
     </footer>
-  
+
+    <script src="script.js"></script>
 </body>
+
 </html>
