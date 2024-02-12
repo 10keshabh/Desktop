@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css2">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.rose-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#greeting {
+    color: #e44d26;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+    <title>Happy Rose Day</title>
+</head>
+<body>
+    <div class="container">
+        <img src="rose.jpg" alt="" class="rose-image">
+        <h1 id="greeting">Happy Rose Day!</h1>
+        <button onclick="changeGreeting()">Click me</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
