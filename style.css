@@ -876,7 +876,7 @@ max-width: 33.33%;
     line-height: 25px;
 }
 /* portifolio */
-/* .portifolio.portifolio-heading
+ .portifolio.portifolio-heading
 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -888,16 +888,229 @@ max-width: 33.33%;
     font-weight: 500;
 } */
 .portifolio.container
-{
+ {
     padding-bottom: 40px;
 }
 .portifolio .portifolio-heading {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 50px;
 }
 
 .portifolio .portifolio-heading h2 {
     color:green;
     font-weight: 500;
 }
-.portifolio.portifolio-item
+ .portifolio.portifolio-item
+
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px; 
+     .portfolio .portifolio-item {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        margin-bottom: 30px;
+    }
+    .portfolio .portifolio-item-inner
+    {
+        border: 6px solid var(--bg-black-100);
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+
+    }   
+    .portfolio .portifolio-item-inner .portfolio-img img
+    {
+        width: 100%;
+        display: block;
+
+    }
+      
+/* contacts */
+.contact-title
+{
+    /* color: var(--skin-color); */
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-sub-title
+{
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+    
+}
+.contact .contact-info-item
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 10px;
+margin-right: 60px;
+}
+/* .contact {
+    display: flex;
+    /* Add other styles as needed */
+/* 
+
+.contact .contact-info-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+} */ 
+
+.contact .contact-info-item.icon
+{
+    display: inline-block;
+
+}
+.contact .contact-info-item.icon.fa
+{
+    font-size: 25px;
+    color: var(--skin-color);
+
+}
+.contact .contact-info-item h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.contact .contact-info-item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+} */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#contact {
+    background-color:red #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section {
+    margin-top: 30px;
+}
+
+.contact-title {
+    color:red #333;
+}
+
+.contact-sub-title {
+    color:red #666;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-info-item {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color:red #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-item i {
+    font-size: 24px;
+    color:greenyellow;
+    margin-bottom: 10px;
+}
+
+.email-section {
+    margin-top: 70px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+/* ... (previous CSS code) ... */
+
+.contact-info-item {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:yellowgreen;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* ... (remaining CSS code) ... */
+.telegram-link {
+    color: #fff; /* Set text color to white or any other color that contrasts well with red */
+    background-color: #ff0000; /* Set background color to red (#ff0000) */
+    padding: 5px 5px; /* Optional: Add padding for better appearance */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+.footer {
+    background-color: #333; /* Set the background color of the footer */
+    color: #fff; /* Set text color to white or any other color that contrasts well with the background */
+    padding: 20px; /* Add padding for better appearance */
+    text-align: center; /* Center align text */
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* ... (your existing CSS) ... */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    background-color: #555;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-section:hover {
+    background-color: #777;
+    transform: translateY(-5px);
+}
+
+/* ... (your existing CSS) ... */
+
